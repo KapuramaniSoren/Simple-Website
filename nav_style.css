@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&display=swap');
+
+* {
+    font-family: 'Charis SIL', serif;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.contains {
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+
+}
+
+body {
+    background-color: azure;
+}
+
+#logo {
+    text-align: left;
+    padding-left: 30px;
+    font-size: 20px;
+    color: #440d5d;
+}
+
+.contains .leftnav_blocks {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #dfdfcc;
+    padding: 25px 0;
+    position: fixed;
+}
+.menus{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.menus .leftnav_blocks li:hover{
+    color: #bdb8d7;
+  display: block;
+   
+}
+
+.menus .leftnav_blocks li:hover  a{
+    color: #fff;
+}
+.contains .main{
+  width: 100%;
+  margin-left: 500px;
+  display: inline-block;
+  margin-top: 20px;
+  flex-direction: row;
+}
+#one{
+   border: 1px solid #440d5d;
+}
+
+.contians .leftnav_blocks ul li:hover{
+    background-color: #594f8d;  
+}
+#two{
+    opacity: 0.5;
+    border: 1px dotted #440d5d;
+    text-align: center;
+}
+
+.contains .main_content{
+    width: 100%;
+    margin-left: 250px;
+    opacity: 0.5;
+    text-align: justify;
+    margin-top: 30px;
+    margin-right: 30px;
+    word-spacing: 2px;
+    padding-block-start: 2px;
+    line-height: 45px;
+}
+#three{
+    border: 1px solid black;
+    opacity: 0.5;
+}
