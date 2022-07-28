@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav_style.css">
+    <script src="https://kit.fontawesome.com/2171492d52.js" crossorigin="anonymous"></script>
+    <title>Navigation bar</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Charis+SIL:ital@0;1&display=swap');
+
+        * {
+            font-family: 'Charis SIL', serif;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        .contains {
+            display: flex;
+            position: relative;
+            align-items: flex-start;
+
+        }
+
+        body {
+            background-color: azure;
+        }
+
+        #logo {
+            text-align: left;
+            padding-left: 30px;
+            font-size: 20px;
+            color: #440d5d;
+        }
+
+        .contains .leftnav_blocks {
+            position: fixed;
+            width: 200px;
+            height: 100%;
+            background: #dfdfcc;
+            padding: 25px 0;
+            position: fixed;
+        }
+
+        .menus {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+
+        .menus .leftnav_blocks li:hover {
+            color: #bdb8d7;
+            display: block;
+
+        }
+
+        .menus .leftnav_blocks li:hover a {
+            color: #fff;
+        }
+
+        .contains .main {
+            width: 100%;
+            margin-left: 500px;
+            display: inline-block;
+            margin-top: 20px;
+            flex-direction: row;
+        }
+
+        #one {
+            border: 1px solid #440d5d;
+        }
+
+        .contians .leftnav_blocks ul li:hover {
+            background-color: #594f8d;
+        }
+
+        #two {
+            opacity: 0.5;
+            border: 1px dotted #440d5d;
+            text-align: center;
+        }
+
+        .contains .main_content {
+            width: 100%;
+            margin-left: 250px;
+            opacity: 0.5;
+            text-align: justify;
+            margin-top: 30px;
+            margin-right: 30px;
+            word-spacing: 2px;
+            padding-block-start: 2px;
+            line-height: 45px;
+        }
+
+        #three {
+            border: 1px solid black;
+            opacity: 0.5;
+        }
+
+        #loc {
+            margin-top: 50px;
+            color: #816262;
+            margin-left: 50px;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 200vh;
+            display: flex;
+            align-items: center;
+            justify-items: center;
+            flex-direction: column;
+        }
+
+        .i1 {
+            margin-top: 50px;
+        }
+
+        .i2 {
+            margin-top: 100px;
+        }
+
+        .i3 {
+            margin-top: 150px;
+        }
+
+        .i4 {
+            margin-top: 200px;
+            margin-bottom: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contains">
+        <div class="leftnav_blocks">
+            <a href="navigationbar.html">
+                <img src="clrexplorer.png" height="150px" width="180px">
+            </a>
+            <h1 id="logo"> Explorer</h1>
+            <hr id="one">
+            <div class="menus">
+                <ul>
+                    <li><a href="home.html"><i class="fa-solid fa-house"></i>Home</a></li><br />
+                    <hr id="two"><br />
+                    <li><a href="about.html"><i class="fa-solid fa-address-card"></i>About us</a></li><br />
+                    <hr id="two"><br />
+                    <li><a href="news.html"><i class="fa-solid fa-newspaper"></i>News</a></li><br />
+                    <hr id="two"><br />
+                    <li><a href="location.html"><i class="fa-solid fa-location-dot"></i>Locations</a></li><br />
+                    <hr id="two"><br />
+                    <li><a href="contact.html"><i class="fa-solid fa-phone"></i>Contact us</a></li><br />
+
+                </ul>
+
+            </div>
+        </div>
+        <div class="container">
+            <h1 id="loc">Locations with map</h1><br /><br />
+            <iframe class="i1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3743.1964453307082!2d85.81233871486604!3d20.250686019259177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a19a70f034c758d%3A0xda434edd567b3553!2sBiju%20Patnaik%20International%20Airport!5e0!3m2!1sen!2sin!4v1654949997872!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br>
+
+            <iframe class="i2"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d455498.82936999056!2d75.51105312344684!3d26.884935780907092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1655103160457!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+
+            <iframe class="i3"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564149.4884320362!2d73.78817089582432!3d29.264274955447522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390db00b8670400b%3A0x732eaab4aaa6c143!2sHaryana!5e0!3m2!1sen!2sin!4v1655103505115!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+
+            <iframe class="i4"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27998.68659124857!2d77.2910607028094!3d28.694557328674858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfb960e1bf54d%3A0x7098dc0a1a8e5193!2sNand%20Nagri%2C%20Mandoli%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1655104549596!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe><br><br>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d413605.8790297187!2d139.36942372865494!3d35.91525587885301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018c1205c87e7af%3A0x8c74f2c0bfa2f65e!2sSaitama%2C%20Japan!5e0!3m2!1sen!2sin!4v1655104959953!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+</body>
+</html>
